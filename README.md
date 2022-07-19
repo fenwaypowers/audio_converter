@@ -11,13 +11,13 @@ Metadata is preserved, but image metadata is only preserved when converting to M
 
 ## Usage
 
-`python3 convert_audio.py -i [directory] -br [bitrate] -o [file extension] -target [size in MB]`
+`python3 main.py -i [directory] -br [bitrate] -o [file extension] -target [size in MB]`
 
 ## Example Use
 
-`python3 convert_audio.py -i 'HOME - Odyssey' -br 128 -o opus`
+`python3 main.py -i 'HOME - Odyssey' -br 128 -o opus`
 
-`python3 convert_audio.py -o opus -target 4`
+`python3 main.py -o opus -target 4`
 
-`python3 convert_audio.py -help`
+`python3 main.py -help`
 
