@@ -1,6 +1,7 @@
 # audio_converter
 A python script that mass converts a folder of audio files into another audio file type using ffmpeg, eyeD3 and audioread.
-Metadata, is preserved, but image metadata is only preserved when converting to MP3. 
+
+Metadata is preserved, but image metadata is only preserved when converting to MP3. 
 
 ## Prerequisites: 
 
