@@ -8,6 +8,7 @@ Metadata is preserved, but image metadata is only preserved when converting to M
 * [ffmpeg](https://ffmpeg.org/ffmpeg.html)
 * [eyeD3](https://eyed3.readthedocs.io/en/latest/)
 * [audioread](https://pypi.org/project/audioread/)
+* [Python 3.9+](https://python.org)
 
 ## Usage
 
