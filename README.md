@@ -14,5 +14,8 @@ A python script that mass converts a folder of audio files into another audio fi
 ## Example Use
 
 `python3 convert_audio.py -i 'HOME - Odyssey' -br 128 -o opus`
+
 `python3 convert_audio.py -o opus -target 4`
+
 `python3 convert_audio.py -help`
+
