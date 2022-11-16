@@ -20,7 +20,7 @@ encoders = {
 directory = ""
 outdirectory = ""
 image_dir = "images"
-extensions = [".flac",".mp3",".aac",".ogg",".wav",".m4a",".alac",".opus",".ac3",".mp2", ",mka"]
+extensions = [".flac",".mp3",".aac",".ogg",".wav",".m4a",".alac",".opus",".ac3",".mp2", ".mka"]
 target_mode = False
 
 if (os.path.isdir(image_dir)) == False:
