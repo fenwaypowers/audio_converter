@@ -10,6 +10,12 @@ Metadata is preserved, but image metadata is only preserved when converting to M
 * [audioread](https://pypi.org/project/audioread/)
 * [Python 3.9+](https://python.org)
 
+To install the required packages, run:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
 ## Usage
 
 `python3 main.py -i [directory] -br [bitrate] -o [file extension] -target [size in MB]`
@@ -24,14 +30,22 @@ Metadata is preserved, but image metadata is only preserved when converting to M
 
 ## Help Message
             
-* Use `-i` to specify the directory you want to convert. If left blank, it will convert all the audio files in the program's directory.
+```
+usage: main.py [-h] [-i INPUT_DIR] [-br BITRATE]
+               [-o {mp3,opus,ogg,aac,m4a,ac3,mp2,flac,wav,alac}] [-t TARGET]
+               [--codec CODEC]
 
-* Use `-br` to specify the bitrate of your audio in kbps. If left blank, default is 320kbps.
+Audio Converter by Fenway Powers
 
-* Use `-o` to specify the extension you want to output to. If left blank, MP3 is default.
-
-* Use `-target` if you want to convert all your files to a certain size (in MB).
-
-* Use `-codec` to specify the codec you would like to use. Only necessary if you are not going to use the default codecs for each extension.
-
-* Use `-default_codec` to view the default codecs for each extension.
+options:
+  -h, --help            show this help message and exit
+  -i INPUT_DIR, --input_dir INPUT_DIR
+                        Input directory containing audio files
+  -br BITRATE, --bitrate BITRATE
+                        Bitrate for audio in kbps
+  -o {mp3,opus,ogg,aac,m4a,ac3,mp2,flac,wav,alac}, --output_ext {mp3,opus,ogg,aac,m4a,ac3,mp2,flac,wav,alac}
+                        Output file extension
+  -t TARGET, --target TARGET
+                        Target file size in MB
+  --codec CODEC         Custom codec to use for conversion
+```
